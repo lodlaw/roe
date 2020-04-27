@@ -1,5 +1,5 @@
 {
-  "name": "@dabapps/roe",
+  "name": "roe",
   "version": "0.10.4",
   "description": "A collection of React components, styles, mixins, and atomic CSS classes to aid with the development of web applications.",
   "main": "dist/js/index.js",
