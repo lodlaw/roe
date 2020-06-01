@@ -73,7 +73,13 @@ export class CookieBanner extends PureComponent<
   }
 
   private setCookie = () => {
-    document.cookie = cookie.serialize('cookies-accepted', 'true');
+    document.cookie = cookie.serialize(
+      'cookies-accepted',
+      'true',
+      {
+        expires: new Date(new Date().setFullYear(new Date().getFullYear() + 1))
+      }
+    );
     this.setState({
       dismissed: true,
     });
